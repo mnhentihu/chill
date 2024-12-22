@@ -1,6 +1,54 @@
-body{
+body {
     background-image: url(/assets/BG_Login.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 100vh;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container {
+    background-color: #181A1CD6;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
 }
