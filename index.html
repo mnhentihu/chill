@@ -4,39 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chill</title>
-    <link rel="stylesheet" href="/styles/login.css" />
+    <!-- <link rel="stylesheet" href="/styles/login.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#181A1C",
+              secondary: "#3D4142",
+              tertiary: "#E7E3FC3B",
+            },
+            backgroundImage: {
+              login: "url('/assets/BG_Login.jpeg')",
+            },
+            fontFamily: {
+              lato: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <div class="head">
-          <img src="/assets/Logo Chill.png" alt="" />
-          <div class="title">
-            <h1>Masuk</h1>
-            <span>Selamat datang kembali!</span>
+  <body class="bg-login bg-cover bg-no-repeat bg-center bg-fixed font-lato">
+    <div class="flex justify-center items-center text-white h-screen">
+      <div class="bg-primary/[0.84] w-[450px] h-fit px-8 py-10 rounded-xl">
+        <div class="flex flex-col justify-center items-center gap-8 mb-10">
+          <img src="/assets/Logo Chill.png" alt="" class="w-52" />
+          <div class="flex flex-col justify-center items-center">
+            <span class="font-semibold text-2xl">Masuk</span>
+            <span class="font-light text-base">Selamat datang kembali!</span>
           </div>
         </div>
-        <div class="forms">
-          <form action="" method="post">
+        <form
+          action=""
+          method="post"
+          class="flex flex-col justify-center items-center w-full gap-8 mb-2"
+        >
+          <div class="flex flex-col justify-center items-start w-full">
             <label for="">Username</label>
-            <input type="text" />
+            <input
+              type="text"
+              placeholder="Masukkan username"
+              class="w-full h-9 rounded-full px-3"
+            />
+          </div>
+          <div class="flex flex-col justify-center items-start w-full">
             <label for="">Kata Sandi</label>
-            <input type="password" />
-          </form>
-        </div>
-        <div class="action">
-          <span
-            >Belum memiliki akun?
-
-            <a href="/register.html">Daftar</a>
+            <input
+              type="password"
+              placeholder="Masukkan kata sandi"
+              class="w-full h-9 rounded-full px-3"
+            />
+          </div>
+        </form>
+        <div class="flex justify-between items-center mb-10">
+          <span class="font-light">
+            Belum memiliki akun?
+            <a href="/register.html" class="font-semibold">Daftar</a>
           </span>
-          <a href="/home.html">Masuk</a>
+          <a href="/home.html" class="font-semibold">Lupa kata sandi?</a>
+        </div>
+        <div class="flex flex-col justify-center items-center w-full gap-2.5">
+          <button
+            class="bg-secondary w-full h-10 border border-secondary rounded-full font-base text-base"
+          >
+            Masuk
+          </button>
+          <span>Atau</span>
+          <button
+            class="bg-transparent w-full h-10 flex justify-center items-center gap-2 border border-tertiary rounded-full font-base text-base"
+          >
+            <img src="/assets/google logo.png.png" alt="" class="w-4" />Masuk
+            Dengan Google
+          </button>
         </div>
       </div>
     </div>
