@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chill</title>
-    <!-- <link rel="stylesheet" href="/styles/login.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +21,7 @@
               tertiary: "#E7E3FC3B",
             },
             backgroundImage: {
-              login: "url('/assets/BG_Daftar.jpeg')",
+              login: "url('/assets/BG_Login.jpeg')",
             },
             fontFamily: {
               lato: ["Lato", "sans-serif"],
@@ -34,51 +33,61 @@
   </head>
   <body class="bg-login bg-cover bg-no-repeat bg-center bg-fixed font-lato">
     <div class="flex justify-center items-center text-white h-screen">
-      <div class="bg-primary/[0.84] w-[450px] h-fit px-8 py-10 rounded-xl">
+      <div
+        class="bg-primary/[0.84] w-[400px] sm:w-[500px] h-fit px-6 py-8 sm:px-8 sm:py-10 rounded-xl"
+      >
         <div class="flex flex-col justify-center items-center gap-8 mb-10">
-          <img src="/assets/Logo Chill.png" alt="" class="w-52" />
+          <img src="/assets/Logo Chill.png" alt="" class="w-36 sm:w-40" />
           <div class="flex flex-col justify-center items-center">
-            <span class="font-semibold text-2xl">Daftar</span>
-            <span class="font-light text-base">Selamat datang!</span>
+            <span class="font-semibold text-xl sm:text-2xl">Daftar</span>
+            <span class="font-light text-sm sm:text-base">Selamat datang!</span>
           </div>
         </div>
         <form
           action=""
           method="post"
-          class="flex flex-col justify-center items-center w-full gap-8 mb-2"
+          class="flex flex-col justify-center items-center w-full gap-8 mb-2 text-sm sm:text-base"
         >
-          <div class="flex flex-col justify-center items-start w-full">
+          <div
+            class="flex flex-col justify-center items-start w-full gap-1 sm:gap-2"
+          >
             <label for="">Username</label>
             <input
               type="text"
               placeholder="Masukkan username"
-              class="w-full h-9 rounded-full px-3"
+              class="w-full h-9 rounded-full px-3 bg-transparent border border-sencodary"
             />
           </div>
-          <div class="flex flex-col justify-center items-start w-full">
+          <div
+            class="flex flex-col justify-center items-start w-full gap-1 sm:gap-2"
+          >
             <label for="">Kata Sandi</label>
             <input
               type="password"
               placeholder="Masukkan kata sandi"
-              class="w-full h-9 rounded-full px-3"
+              class="w-full h-9 rounded-full px-3 bg-transparent border border-sencodary"
             />
           </div>
-          <div class="flex flex-col justify-center items-start w-full">
-            <label for="">Konfirmasi kata Sandi</label>
+          <div
+            class="flex flex-col justify-center items-start w-full gap-1 sm:gap-2"
+          >
+            <label for="">Konfirmasi Kata Sandi</label>
             <input
               type="password"
               placeholder="Masukkan kata sandi"
-              class="w-full h-9 rounded-full px-3"
+              class="w-full h-9 rounded-full px-3 bg-transparent border border-sencodary"
             />
           </div>
         </form>
-        <div class="text-left mb-10">
-          <span class="font-light">
+        <div class="flex justify-between items-center mb-10">
+          <span class="font-extralight text-sm sm:font-light sm:text-base">
             Sudah punya akun?
-            <a href="/index.html" class="font-semibold">Masuk</a>
+            <a href="/Index.html" class="font-normal sm:font-semibold">Masuk</a>
           </span>
         </div>
-        <div class="flex flex-col justify-center items-center w-full gap-2.5">
+        <div
+          class="flex flex-col justify-center items-center w-full gap-2.5 text-sm sm:text-base"
+        >
           <button
             class="bg-secondary w-full h-10 border border-secondary rounded-full font-base text-base"
           >
