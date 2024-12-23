@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Avatar: The Way of Water",
+    "image": "assets/lansdcape/avatar-landscape.npg"
+  },
+  {
+    "id": 2,
+    "title": "Blue Lock",
+    "image": "assets/landscape/bluelock-landscare.npg"
+  },
+  {
+    "id": 3,
+    "title": "Fast X",
+    "image": "assets/landscape/fastx-landscape.npg"
+  },
+  {
+    "id": 4,
+    "title": "My Perfect Stranger",
+    "image": "assets/landscape/myperfectstranger-landscape.npg"
+  },
+  {
+    "id": 5,
+    "title": "The Man Called Otto",
+    "image": "assets/landscape/otto-landscape.npg"
+  },
+  {
+    "id": 6,
+    "title": "Shazam",
+    "image": "assets/landscape/shazam-landscape.npg"
+  }
+]

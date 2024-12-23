@@ -49,62 +49,62 @@
   },
   {
     "id": 9,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "image": "assets/potrait/antman.npg",
+    "title": "Fast X",
+    "image": "assets/potrait/fastx.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 10,
-    "title": "Alice In Borderland",
-    "image": "assets/potrait/aliceinborderland.npg",
-    "category": ["top_rating", "populer"]
+    "title": "The Little Mermaid",
+    "image": "assets/potrait/littlemermaid.npg",
+    "category": ["terbaru", "top_rating"]
   },
   {
     "id": 11,
-    "title": "All of Us Are Dead",
-    "image": "assets/potrait/allofusaredead.npg",
+    "title": "Megan",
+    "image": "assets/potrait/megan.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 12,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "image": "assets/potrait/antman.npg",
+    "title": "Missing",
+    "image": "assets/potrait/missing.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 13,
-    "title": "Alice In Borderland",
-    "image": "assets/potrait/aliceinborderland.npg",
+    "title": "My Hero Academia",
+    "image": "assets/potrait/myheroacademia.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 14,
-    "title": "All of Us Are Dead",
-    "image": "assets/potrait/allofusaredead.npg",
+    "title": "My Perfect Stranger",
+    "image": "assets/potrait/myperfectstranger.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 15,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "image": "assets/potrait/antman.npg",
+    "title": "The Man Called Otto",
+    "image": "assets/potrait/otto.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 16,
-    "title": "Alice In Borderland",
-    "image": "assets/potrait/aliceinborderland.npg",
+    "title": "Shazam",
+    "image": "assets/potrait/shazam.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 17,
-    "title": "All of Us Are Dead",
-    "image": "assets/potrait/allofusaredead.npg",
+    "title": "Suzume",
+    "image": "assets/potrait/suzume.npg",
     "category": ["top_rating", "populer"]
   },
   {
     "id": 18,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "image": "assets/potrait/antman.npg",
+    "title": "The Tomorrow War",
+    "image": "assets/potrait/tomorrowwar.npg",
     "category": ["top_rating", "populer"]
   }
 ]
