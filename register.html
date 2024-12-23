@@ -34,13 +34,19 @@
   <body class="bg-login bg-cover bg-no-repeat bg-center bg-fixed font-lato">
     <div class="flex justify-center items-center text-white h-screen">
       <div
-        class="bg-primary/[0.84] w-[400px] sm:w-[500px] h-fit px-6 py-8 sm:px-8 sm:py-10 rounded-xl"
+        class="bg-primary/[0.84] w-[300px] sm:w-[500px] h-fit px-4 py-4 sm:px-8 sm:py-8 rounded-xl"
       >
-        <div class="flex flex-col justify-center items-center gap-8 mb-10">
-          <img src="/assets/Logo Chill.png" alt="" class="w-36 sm:w-40" />
+        <div
+          class="flex flex-col justify-center items-center gap-3 mb-3 sm:gap-8 sm:mb-8"
+        >
+          <img src="/assets/Logo Chill.png" alt="" class="w-24 sm:w-40" />
           <div class="flex flex-col justify-center items-center">
-            <span class="font-semibold text-xl sm:text-2xl">Daftar</span>
-            <span class="font-light text-sm sm:text-base">Selamat datang!</span>
+            <span class="font-medium text-lg sm:font-semibold sm:text-2xl"
+              >Daftar</span
+            >
+            <span class="font-light sm:font-normal text-xs sm:text-base"
+              >Selamat datang!</span
+            >
           </div>
         </div>
         <form
@@ -51,54 +57,63 @@
           <div
             class="flex flex-col justify-center items-start w-full gap-1 sm:gap-2"
           >
-            <label for="">Username</label>
+            <label for="" class="font-light sm:font-normal">Username</label>
             <input
               type="text"
               placeholder="Masukkan username"
-              class="w-full h-9 rounded-full px-3 bg-transparent border border-sencodary"
+              class="w-full h-9 rounded-full px-3 bg-transparent border border-tertiary font-thin sm:font-normal"
             />
           </div>
           <div
             class="flex flex-col justify-center items-start w-full gap-1 sm:gap-2"
           >
-            <label for="">Kata Sandi</label>
+            <label for="" class="font-light sm:font-normal">Kata Sandi</label>
             <input
               type="password"
               placeholder="Masukkan kata sandi"
-              class="w-full h-9 rounded-full px-3 bg-transparent border border-sencodary"
+              class="w-full h-9 rounded-full px-3 bg-transparent border border-tertiary font-thin sm:font-normal"
             />
           </div>
           <div
             class="flex flex-col justify-center items-start w-full gap-1 sm:gap-2"
           >
-            <label for="">Konfirmasi Kata Sandi</label>
+            <label for="" class="font-light sm:font-normal"
+              >Konfirmasi Kata Sandi</label
+            >
             <input
               type="password"
               placeholder="Masukkan kata sandi"
-              class="w-full h-9 rounded-full px-3 bg-transparent border border-sencodary"
+              class="w-full h-9 rounded-full px-3 bg-transparent border border-tertiary font-thin sm:font-normal"
             />
           </div>
         </form>
         <div class="flex justify-between items-center mb-10">
-          <span class="font-extralight text-sm sm:font-light sm:text-base">
+          <span class="font-thin text-sm sm:font-light sm:text-base">
             Sudah punya akun?
-            <a href="/Index.html" class="font-normal sm:font-semibold">Masuk</a>
+            <a
+              href="/index.html"
+              class="font-light text-xs sm:font-semibold sm:text-base"
+              >Masuk</a
+            >
           </span>
         </div>
-        <div
-          class="flex flex-col justify-center items-center w-full gap-2.5 text-sm sm:text-base"
-        >
+        <div class="flex flex-col justify-center items-center w-full gap-2.5">
           <button
-            class="bg-secondary w-full h-10 border border-secondary rounded-full font-base text-base"
+            class="bg-secondary w-full h-10 border border-tertiary rounded-full font-light text-xs sm:font-normal sm:text-base"
           >
-            Daftar
+            Masuk
           </button>
-          <span>Atau</span>
-          <button
-            class="bg-transparent w-full h-10 flex justify-center items-center gap-2 border border-tertiary rounded-full font-base text-base"
+          <span class="font-light text-xs sm:font-normal sm:text-base"
+            >Atau</span
           >
-            <img src="/assets/google logo.png.png" alt="" class="w-4" />Masuk
-            Dengan Google
+          <button
+            class="bg-transparent w-full h-10 flex justify-center items-center gap-2 border border-tertiary rounded-full font-light text-xs sm:font-normal sm:text-base"
+          >
+            <img
+              src="/assets/google logo.png.png"
+              alt=""
+              class="w-2.5 sm:w-4"
+            />Masuk Dengan Google
           </button>
         </div>
       </div>
