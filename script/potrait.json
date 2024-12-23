@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Alice In Borderland",
+    "image": "assets/potrait/aliceinborderland.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 2,
+    "title": "All of Us Are Dead",
+    "image": "assets/potrait/allofusaredead.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 3,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "image": "assets/potrait/antman.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 4,
+    "title": "Avatar: The Way of Water",
+    "image": "assets/potrait/avatar.npg",
+    "category": ["top_rating", "populer", "terbaru"]
+  },
+  {
+    "id": 5,
+    "title": "Big Hero 6",
+    "image": "assets/potrait/bighero6.npg",
+    "category": ["populer"]
+  },
+  {
+    "id": 6,
+    "title": "Blue Lock",
+    "image": "assets/potrait/bluelock.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 7,
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "image": "assets/potrait/drstrange.npg",
+    "category": ["terbaru", "populer"]
+  },
+  {
+    "id": 8,
+    "title": "Duty After School",
+    "image": "assets/potrait/allofusaredead.npg",
+    "category": ["populer"]
+  },
+  {
+    "id": 9,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "image": "assets/potrait/antman.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 10,
+    "title": "Alice In Borderland",
+    "image": "assets/potrait/aliceinborderland.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 11,
+    "title": "All of Us Are Dead",
+    "image": "assets/potrait/allofusaredead.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 12,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "image": "assets/potrait/antman.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 13,
+    "title": "Alice In Borderland",
+    "image": "assets/potrait/aliceinborderland.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 14,
+    "title": "All of Us Are Dead",
+    "image": "assets/potrait/allofusaredead.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 15,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "image": "assets/potrait/antman.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 16,
+    "title": "Alice In Borderland",
+    "image": "assets/potrait/aliceinborderland.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 17,
+    "title": "All of Us Are Dead",
+    "image": "assets/potrait/allofusaredead.npg",
+    "category": ["top_rating", "populer"]
+  },
+  {
+    "id": 18,
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "image": "assets/potrait/antman.npg",
+    "category": ["top_rating", "populer"]
+  }
+]
