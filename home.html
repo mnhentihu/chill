@@ -4,17 +4,559 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chill | Home</title>
-    <link rel="stylesheet" href="/styles/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script/swiper.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="container">
-      <nav></nav>
-    </div>
+  <body class="w-screen h-screen font-lato text-white bg-primary">
+    <nav class="h-fit py-5 flex justify-center">
+      <div class="w-11/12 flex flex-row justify-between items-center">
+        <div class="flex justify-center items-center gap-20 text-white">
+          <a href="">
+            <img
+              id="nav-logo"
+              src="/assets/Logo Chill.png"
+              alt=""
+              srcset=""
+              class="h-8"
+            />
+          </a>
+          <span>Series</span>
+          <span>Film</span>
+          <span>Daftar Saya</span>
+        </div>
+        <div class="relative">
+          <button
+            id="profileButton"
+            class="flex items-center gap-1 focus:outline-none"
+          >
+            <img src="/assets/avatar.jpg" alt="" class="w-8 rounded-full" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m7 10l5 5l5-5"
+              />
+            </svg>
+          </button>
+          <div
+            id="profileDropdown"
+            class="absolute right-0 mt-2 w-40 bg-primary border border-secondary rounded-md shadow-lg opacity-0 invisible transition-all duration-300"
+          >
+            <ul class="py-1">
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm hover:text-button"
+                  >🧑 Profil Saya</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm hover:text-button"
+                  >💵 Ubah Premium</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm hover:text-button"
+                  >❌ Keluar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="bg-header bg-cover bg-no-repeat bg-center w-screen h-[500px]"
+    >
+      <div
+        class="w-screen h-full bg-gradient-to-t from-primary to-transparent flex justify-center items-end"
+      >
+        <div class="w-11/12 pb-16">
+          <div
+            class="flex flex-col justify-center items-start w-1/2 gap-6 mb-8"
+          >
+            <h1 class="font-bold text-5xl">Ted Lasso</h1>
+            <p class="text-base">
+              Seorang pelatih sepak bola asal Amerika Serikat yang diboyong ke
+              Inggris untuk melatih klub sepak bola Premier League, AFC
+              Richmond. Ted yang tanpa pengalaman di sepak bola Inggris pada
+              mulanya disewa oleh pemilik klub dengan harapan ia akan gagal dan
+              membuat AFC Richmond berantakan.
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex justify-center items-center gap-4">
+              <button
+                class="bg-button w-fit h-10 px-10 rounded-full hover:bg-primary"
+              >
+                Mulai
+              </button>
+              <button
+                class="flex justify-center items-center gap-2 bg-primary w-fit h-10 px-10 rounded-full hover:bg-secondary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                  />
+                </svg>
+                Selengkapnya
+              </button>
+              <p class="border border-white rounded-full p-2">13+</p>
+            </div>
+            <button class="border border-white rounded-full p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.5 21H8a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h7l6.586-6.586C22.846 3.154 25 4.047 25 5.828V6m0 8.5v11.672c0 1.781-2.154 2.674-3.414 1.414L17 23M7 28L29 6"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center">
+      <div class="w-11/12">
+        <h1 class="text-3xl font-bold my-10">Melanjutkan Tonton Film</h1>
+        <!-- Slider main container -->
+        <div class="swiper swiperLandscape">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/landscape/otto-lanscape.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-32 object-cover w-full"
+              />
+              <div
+                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
+              >
+                <span class="text-sm sm:text-sm">A Man Called Otto</span>
+                <span
+                  class="flex justify-center items-center gap-1 font-light text-xs sm:text-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                    />
+                  </svg>
+                  4.7/5
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/landscape/avatar-lanscape.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-32 object-cover w-full"
+              />
+              <div
+                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
+              >
+                <span class="text-sm">Avatar : The Way of Water</span>
+                <span
+                  class="flex justify-center items-center gap-1 font-light text-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                    />
+                  </svg>
+                  4.7/5
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/landscape/bluelock-lanscape.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-32 object-cover w-full"
+              />
+              <div
+                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
+              >
+                <span class="text-base">Blue Lock</span>
+                <span
+                  class="flex justify-center items-center gap-1 font-light text-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                    />
+                  </svg>
+                  4.7/5
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/landscape/fastx-lanscape.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-32 object-cover w-full"
+              />
+              <div
+                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
+              >
+                <span class="text-base">Fast X</span>
+                <span
+                  class="flex justify-center items-center gap-1 font-light text-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                    />
+                  </svg>
+                  4.7/5
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/landscape/myperfectstranger-landscape.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-32 object-cover w-full"
+              />
+              <div
+                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
+              >
+                <span class="text-base">My Perfect Stranger</span>
+                <span
+                  class="flex justify-center items-center gap-1 font-light text-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                    />
+                  </svg>
+                  4.7/5
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/landscape/shazam-lanscape.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-32 object-cover w-full"
+              />
+              <div
+                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
+              >
+                <span class="text-base">Shazam</span>
+                <span
+                  class="flex justify-center items-center gap-1 font-light text-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                    />
+                  </svg>
+                  4.7/5
+                </span>
+              </div>
+            </div>
+
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center">
+      <div class="w-11/12 mb-10">
+        <h1 class="text-3xl font-bold my-10">
+          Top Rating Film dan Series Hari ini
+        </h1>
+        <div class="swiper swiperPotrait">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/aliceinborderland.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/allofusaredead.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/antman.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/avatar.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/bighero6.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/drstrange.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+            <div class="swiper-slide realtive w-fit">
+              <img
+                src="/assets/potrait/dutyafterschool.png"
+                alt=""
+                srcset=""
+                class="rounded-lg h-96 object-cover"
+              />
+              <div
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+              >
+                Episode Baru
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="flex justify-center border-t py-12">
+      <div class="w-11/12 flex justify-between">
+        <div class="flex flex-col justify-center">
+          <img
+            src="/assets/Logo Chill.png"
+            alt=""
+            srcset=""
+            class="h-9 w-fit"
+          />
+          <p class="text-sm font-light">@2024 Chill All Rights Reserved.</p>
+        </div>
+        <div class="genre flex flex-col gap-3">
+          <h1 class="text-normal font-medium">Genre</h1>
+          <div class="flex gap-6">
+            <div class="text-sm font-light flex flex-col gap-3">
+              <p>Aksi</p>
+              <p>Anak-anak</p>
+              <p>Anime</p>
+              <p>Britania</p>
+            </div>
+            <div class="text-sm font-light flex flex-col gap-3">
+              <p>Drama</p>
+              <p>Fantasi Ilmiah & fantasi</p>
+              <p>Kejahatan</p>
+              <p>KDrama</p>
+            </div>
+            <div class="text-sm font-light flex flex-col gap-3">
+              <p>Komedi</p>
+              <p>Petualangan</p>
+              <p>Perang</p>
+              <p>Romantis</p>
+            </div>
+            <div class="text-sm font-light flex flex-col gap-3">
+              <p>Sains & Alam</p>
+              <p>Thriller</p>
+            </div>
+          </div>
+        </div>
+        <div class="bantuan flex flex-col gap-3">
+          <h1 class="text-normal font-medium">Bantuan</h1>
+          <div class="text-sm font-light flex flex-col gap-3">
+            <p>FAQ</p>
+            <p>Kontak Kami</p>
+            <p>Privasi</p>
+            <p>Syarat & Ketentuan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              button: "#0F1E93",
+              primary: "#181A1C",
+              secondary: "#3D4142",
+              tertiary: "#E7E3FC3B",
+            },
+            backgroundImage: {
+              header: "url('/assets/tedlasso.png')",
+            },
+            fontFamily: {
+              lato: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+      const swiper = new Swiper(".swiperLandscape", {
+        slidesPerView: "auto",
+        spaceBetween: 25,
+
+        breakpoints: {
+          640: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 20,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const swiperVertical = new Swiper(".swiperPotrait", {
+        slidesPerView: "auto",
+        spaceBetween: 25,
+
+        breakpoints: {
+          640: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 20,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      function updateImage() {
+        const img = document.getElementById("nav-logo");
+        if (window.innerWidth >= 640) {
+          img.src = "/assets/Logo Chill.png";
+        } else {
+          img.src = "/assets/logoNoText.png";
+        }
+      }
+
+      window.addEventListener("resize", updateImage);
+      window.addEventListener("DOMContentLoaded", updateImage);
+    </script>
   </body>
 </html>
