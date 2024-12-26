@@ -1,110 +1,110 @@
 [
   {
     "id": 1,
-    "title": "Alice In Borderland",
-    "image": "assets/potrait/aliceinborderland.npg",
-    "category": ["top_rating", "populer"]
+    "title": "Top Rating Film dan Series Hari ini",
+    "films": [
+      {
+        "id": 1,
+        "title": "Alice In Borderland",
+        "image": "assets/potrait/aliceinborderland.png"
+      },
+      {
+        "id": 2,
+        "title": "All of Us Are Dead",
+        "image": "assets/potrait/allofusaredead.png"
+      },
+      {
+        "id": 3,
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "image": "assets/potrait/antman.png"
+      },
+      {
+        "id": 4,
+        "title": "Avatar: The Way of Water",
+        "image": "assets/potrait/avatar.png"
+      },
+      {
+        "id": 5,
+        "title": "Big Hero 6",
+        "image": "assets/potrait/bighero6.png"
+      },
+      {
+        "id": 6,
+        "title": "Blue Lock",
+        "image": "assets/potrait/bluelock.png"
+      }
+    ]
   },
   {
     "id": 2,
-    "title": "All of Us Are Dead",
-    "image": "assets/potrait/allofusaredead.npg",
-    "category": ["top_rating", "populer"]
+    "title": "Film trending",
+    "films": [
+      {
+        "id": 1,
+        "title": "Alice In Borderland",
+        "image": "assets/potrait/aliceinborderland.png"
+      },
+      {
+        "id": 2,
+        "title": "All of Us Are Dead",
+        "image": "assets/potrait/allofusaredead.png"
+      },
+      {
+        "id": 3,
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "image": "assets/potrait/antman.png"
+      },
+      {
+        "id": 4,
+        "title": "Avatar: The Way of Water",
+        "image": "assets/potrait/avatar.png"
+      },
+      {
+        "id": 5,
+        "title": "Big Hero 6",
+        "image": "assets/potrait/bighero6.png"
+      },
+      {
+        "id": 6,
+        "title": "Blue Lock",
+        "image": "assets/potrait/bluelock.png"
+      }
+    ]
   },
   {
     "id": 3,
-    "title": "Ant-Man and the Wasp: Quantumania",
-    "image": "assets/potrait/antman.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 4,
-    "title": "Avatar: The Way of Water",
-    "image": "assets/potrait/avatar.npg",
-    "category": ["top_rating", "populer", "terbaru"]
-  },
-  {
-    "id": 5,
-    "title": "Big Hero 6",
-    "image": "assets/potrait/bighero6.npg",
-    "category": ["populer"]
-  },
-  {
-    "id": 6,
-    "title": "Blue Lock",
-    "image": "assets/potrait/bluelock.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 7,
-    "title": "Doctor Strange in the Multiverse of Madness",
-    "image": "assets/potrait/drstrange.npg",
-    "category": ["terbaru", "populer"]
-  },
-  {
-    "id": 8,
-    "title": "Duty After School",
-    "image": "assets/potrait/allofusaredead.npg",
-    "category": ["populer"]
-  },
-  {
-    "id": 9,
-    "title": "Fast X",
-    "image": "assets/potrait/fastx.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 10,
-    "title": "The Little Mermaid",
-    "image": "assets/potrait/littlemermaid.npg",
-    "category": ["terbaru", "top_rating"]
-  },
-  {
-    "id": 11,
-    "title": "Megan",
-    "image": "assets/potrait/megan.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 12,
-    "title": "Missing",
-    "image": "assets/potrait/missing.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 13,
-    "title": "My Hero Academia",
-    "image": "assets/potrait/myheroacademia.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 14,
-    "title": "My Perfect Stranger",
-    "image": "assets/potrait/myperfectstranger.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 15,
-    "title": "The Man Called Otto",
-    "image": "assets/potrait/otto.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 16,
-    "title": "Shazam",
-    "image": "assets/potrait/shazam.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 17,
-    "title": "Suzume",
-    "image": "assets/potrait/suzume.npg",
-    "category": ["top_rating", "populer"]
-  },
-  {
-    "id": 18,
-    "title": "The Tomorrow War",
-    "image": "assets/potrait/tomorrowwar.npg",
-    "category": ["top_rating", "populer"]
+    "title": "Rilis Baru",
+    "films": [
+      {
+        "id": 1,
+        "title": "Alice In Borderland",
+        "image": "assets/potrait/aliceinborderland.png"
+      },
+      {
+        "id": 2,
+        "title": "All of Us Are Dead",
+        "image": "assets/potrait/allofusaredead.png"
+      },
+      {
+        "id": 3,
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "image": "assets/potrait/antman.png"
+      },
+      {
+        "id": 4,
+        "title": "Avatar: The Way of Water",
+        "image": "assets/potrait/avatar.png"
+      },
+      {
+        "id": 5,
+        "title": "Big Hero 6",
+        "image": "assets/potrait/bighero6.png"
+      },
+      {
+        "id": 6,
+        "title": "Blue Lock",
+        "image": "assets/potrait/bluelock.png"
+      }
+    ]
   }
 ]
