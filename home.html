@@ -14,16 +14,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/script/swiper.js"></script>
     <script src="/script/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js"></script>
   </head>
-  <body class="w-screen h-screen font-lato text-white bg-primary">
+  <body class="font-lato text-white bg-primary">
     <nav class="h-fit py-5 flex justify-center">
       <div class="w-11/12 flex flex-row justify-between items-center">
-        <div class="flex justify-center items-center gap-20 text-white">
+        <div class="flex justify-center items-center gap-3 sm:gap-20 text-white text-base>
           <a href="">
             <img
               id="nav-logo"
@@ -40,43 +40,29 @@
         <div class="relative">
           <button
             id="profileButton"
-            class="flex items-center gap-1 focus:outline-none"
+            class="flex items-center gap-1 focus:outline-no"
           >
             <img src="/assets/avatar.jpg" alt="" class="w-8 rounded-full" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="m7 10l5 5l5-5"
-              />
-            </svg>
+            <span class="iconify" data-icon="mdi:keyboard-arrow-down" data-width="24" data-height="24"></span>
           </button>
           <div
             id="profileDropdown"
             class="absolute right-0 mt-2 w-40 bg-primary border border-secondary rounded-md shadow-lg opacity-0 invisible transition-all duration-300"
           >
-            <ul class="py-1">
+            <ul class="p-1">
               <li>
-                <a href="#" class="block px-4 py-2 text-sm hover:text-button"
-                  >🧑 Profil Saya</a
+                <a href="#" class="block flex gap-2 px-4 py-2 text-sm hover:text-button focus:text-button"
+                  ><span class="iconify" data-icon="ooui:user-avatar" data-width="18" data-height="18"></span> Profil Saya</a
                 >
               </li>
               <li>
-                <a href="#" class="block px-4 py-2 text-sm hover:text-button"
-                  >💵 Ubah Premium</a
+                <a href="#" class="block flex gap-2 px-4 py-2 text-sm hover:text-button focus:text-button"
+                  ><span class="iconify" data-icon="material-symbols:star" data-width="18" data-height="18"></span> Ubah Premium</a
                 >
               </li>
               <li>
-                <a href="#" class="block px-4 py-2 text-sm hover:text-button"
-                  >❌ Keluar</a
+                <a href="#" class="block flex gap-2 px-4 py-2 text-sm hover:text-button focus:text-button"
+                  ><span class="iconify" data-icon="ci:exit" data-width="18" data-height="18"></span> Keluar</a
                 >
               </li>
             </ul>
@@ -85,17 +71,17 @@
       </div>
     </nav>
     <section
-      class="bg-header bg-cover bg-no-repeat bg-center w-screen h-[500px]"
+      class="bg-header bg-cover bg-no-repeat bg-center h-[240px] sm:h-[500px]"
     >
       <div
-        class="w-screen h-full bg-gradient-to-t from-primary to-transparent flex justify-center items-end"
+        class="h-full bg-gradient-to-t from-primary to-transparent flex justify-center items-end"
       >
-        <div class="w-11/12 pb-16">
+        <div class="w-11/12 pb-8 sm:pb-16">
           <div
-            class="flex flex-col justify-center items-start w-1/2 gap-6 mb-8"
+            class="flex flex-col justify-center items-start w-2/3 sm:w-1/2 gap-1 sm:gap-6 mb-2 sm:mb-8"
           >
-            <h1 class="font-bold text-5xl">Ted Lasso</h1>
-            <p class="text-base">
+            <h1 class="font-bold text-2xl sm:text-5xl">Ted Lasso</h1>
+            <p class="text-sm sm:text-base line-clamp-2 sm:line-clamp-none">
               Seorang pelatih sepak bola asal Amerika Serikat yang diboyong ke
               Inggris untuk melatih klub sepak bola Premier League, AFC
               Richmond. Ted yang tanpa pengalaman di sepak bola Inggris pada
@@ -104,46 +90,22 @@
             </p>
           </div>
           <div class="flex justify-between items-center">
-            <div class="flex justify-center items-center gap-4">
+            <div class="flex justify-center items-center gap-1">
               <button
-                class="bg-button w-fit h-10 px-10 rounded-full hover:bg-primary"
+                class="bg-button w-fit py-1 sm:py-2 px-3 sm:px-10 rounded-full hover:bg-primary"
               >
-                Mulai
+                <span class="text-sm sm:text-base">Mulai</span>
               </button>
               <button
-                class="flex justify-center items-center gap-2 bg-primary w-fit h-10 px-10 rounded-full hover:bg-secondary"
+                class="flex justify-center items-center gap-2 bg-primary w-fit py-1 sm:py-2 px-3 sm:px-10 rounded-full hover:bg-secondary"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
-                  />
-                </svg>
-                Selengkapnya
+              <span class="iconify" data-icon="material-symbols:info-outline" data-width="15" data-height="15"></span>
+                <span class="text-sm sm:text-base">Selengkapnya</span>
               </button>
-              <p class="border border-white rounded-full p-2">13+</p>
+              <p class="border border-white rounded-full p-1 text-sm sm:text-base">13+</p>
             </div>
-            <button class="border border-white rounded-full p-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9.5 21H8a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h7l6.586-6.586C22.846 3.154 25 4.047 25 5.828V6m0 8.5v11.672c0 1.781-2.154 2.674-3.414 1.414L17 23M7 28L29 6"
-                />
-              </svg>
+            <button class="border border-white rounded-full p-1">
+              <span class="iconify" data-icon="clarity:volume-mute-line" data-width="15" data-height="15"></span>
             </button>
           </div>
         </div>
@@ -151,7 +113,7 @@
     </section>
     <section class="flex justify-center">
       <div class="w-11/12">
-        <h1 class="text-3xl font-bold my-10">Melanjutkan Tonton Film</h1>
+        <h1 class="text-xl sm:text-3xl font-bold my-4 sm:my-10">Melanjutkan Tonton Film</h1>
         <!-- Slider main container -->
         <div class="swiper swiperLandscape">
           <!-- Additional required wrapper -->
@@ -162,7 +124,7 @@
                 src="/assets/landscape/otto-lanscape.png"
                 alt=""
                 srcset=""
-                class="rounded-lg h-32 object-cover w-full"
+                class="rounded-lg h-44 sm:h-32 object-cover w-[310px] sm:w-full"
               />
               <div
                 class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
@@ -171,17 +133,7 @@
                 <span
                   class="flex justify-center items-center gap-1 font-light text-xs sm:text-sm"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                    />
-                  </svg>
+                <span class="iconify" data-icon="material-symbols:star"></span>
                   4.7/5
                 </span>
               </div>
@@ -191,7 +143,7 @@
                 src="/assets/landscape/avatar-lanscape.png"
                 alt=""
                 srcset=""
-                class="rounded-lg h-32 object-cover w-full"
+                class="rounded-lg h-44 sm:h-32 object-cover w-[310px] sm:w-full"
               />
               <div
                 class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
@@ -215,124 +167,6 @@
                 </span>
               </div>
             </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/landscape/bluelock-lanscape.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-32 object-cover w-full"
-              />
-              <div
-                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
-              >
-                <span class="text-base">Blue Lock</span>
-                <span
-                  class="flex justify-center items-center gap-1 font-light text-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                    />
-                  </svg>
-                  4.7/5
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/landscape/fastx-lanscape.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-32 object-cover w-full"
-              />
-              <div
-                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
-              >
-                <span class="text-base">Fast X</span>
-                <span
-                  class="flex justify-center items-center gap-1 font-light text-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                    />
-                  </svg>
-                  4.7/5
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/landscape/myperfectstranger-landscape.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-32 object-cover w-full"
-              />
-              <div
-                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
-              >
-                <span class="text-base">My Perfect Stranger</span>
-                <span
-                  class="flex justify-center items-center gap-1 font-light text-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                    />
-                  </svg>
-                  4.7/5
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/landscape/shazam-lanscape.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-32 object-cover w-full"
-              />
-              <div
-                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
-              >
-                <span class="text-base">Shazam</span>
-                <span
-                  class="flex justify-center items-center gap-1 font-light text-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                    />
-                  </svg>
-                  4.7/5
-                </span>
-              </div>
-            </div>
-
-            ...
           </div>
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
@@ -340,9 +174,9 @@
         </div>
       </div>
     </section>
-    <section class="flex justify-center">
+    <section class="flex justify-center mt-6 sm:mt-0">
       <div class="w-11/12 mb-10">
-        <h1 class="text-3xl font-bold my-10">
+        <h1 class="text-xl sm:text-3xl font-bold my-4 sm:my-10">
           Top Rating Film dan Series Hari ini
         </h1>
         <div class="swiper swiperPotrait">
@@ -354,10 +188,10 @@
                 src="/assets/potrait/aliceinborderland.png"
                 alt=""
                 srcset=""
-                class="rounded-lg h-96 object-cover"
+                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
               />
               <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
               >
                 Episode Baru
               </div>
@@ -367,10 +201,10 @@
                 src="/assets/potrait/allofusaredead.png"
                 alt=""
                 srcset=""
-                class="rounded-lg h-96 object-cover"
+                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
               />
               <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
               >
                 Episode Baru
               </div>
@@ -380,10 +214,10 @@
                 src="/assets/potrait/antman.png"
                 alt=""
                 srcset=""
-                class="rounded-lg h-96 object-cover"
+                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
               />
               <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
               >
                 Episode Baru
               </div>
@@ -393,49 +227,10 @@
                 src="/assets/potrait/avatar.png"
                 alt=""
                 srcset=""
-                class="rounded-lg h-96 object-cover"
+                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
               />
               <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/bighero6.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-96 object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/drstrange.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-96 object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/dutyafterschool.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-96 object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-xs sm:text-sm rounded-full"
+                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
               >
                 Episode Baru
               </div>
@@ -447,9 +242,9 @@
         </div>
       </div>
     </section>
-    <footer class="flex justify-center border-t py-12">
-      <div class="w-11/12 flex justify-between">
-        <div class="flex flex-col justify-center">
+    <footer class="flex justify-center border-t py-8 sm:py-12">
+      <div class="w-11/12 flex justify-between flex-col sm:flex-row">
+        <div class="flex flex-col justify-center gap-y-4 sm:gap-y-0 mb-10 sm:mb-0">
           <img
             src="/assets/Logo Chill.png"
             alt=""
@@ -458,7 +253,45 @@
           />
           <p class="text-sm font-light">@2024 Chill All Rights Reserved.</p>
         </div>
-        <div class="genre flex flex-col gap-3">
+        <div class="block sm:hidden">
+          <button
+            class="w-full text-left py-2 flex justify-between items-center focus:outline-none"
+            onclick="toggleAccordion('accordion1')"
+          >
+            <span class="text-normal font-medium">Genre</span>
+            <span id="icon-accordion1" class="iconify transform transition-transform" data-icon="ri:arrow-right-s-line" data-width="24" data-height="24"></span>
+          </button>
+          <div
+            id="accordion1"
+            class="hidden pl-4 transition-all duration-300"
+          >
+            <div class="flex gap-6">
+              <div class="text-sm font-light flex flex-col gap-3">
+                <p>Aksi</p>
+                <p>Anak-anak</p>
+                <p>Anime</p>
+                <p>Britania</p>
+              </div>
+              <div class="text-sm font-light flex flex-col gap-3">
+                <p>Drama</p>
+                <p>Fantasi Ilmiah & fantasi</p>
+                <p>Kejahatan</p>
+                <p>KDrama</p>
+              </div>
+              <div class="text-sm font-light flex flex-col gap-3">
+                <p>Komedi</p>
+                <p>Petualangan</p>
+                <p>Perang</p>
+                <p>Romantis</p>
+              </div>
+              <div class="text-sm font-light flex flex-col gap-3">
+                <p>Sains & Alam</p>
+                <p>Thriller</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="genre hidden sm:flex flex-col gap-3">
           <h1 class="text-normal font-medium">Genre</h1>
           <div class="flex gap-6">
             <div class="text-sm font-light flex flex-col gap-3">
@@ -485,7 +318,27 @@
             </div>
           </div>
         </div>
-        <div class="bantuan flex flex-col gap-3">
+        <div class="block sm:hidden">
+          <button
+            class="w-full text-left py-2 flex justify-between items-center focus:outline-none"
+            onclick="toggleAccordion('accordion2')"
+          >
+            <span class="text-normal font-medium">Bantuan</span>
+            <span id="icon-accordion2" class="iconify transform transition-transform" data-icon="ri:arrow-right-s-line" data-width="24" data-height="24"></span>
+          </button>
+          <div
+            id="accordion2"
+            class="hidden pl-4 transition-all duration-300"
+          >
+            <div class="text-sm font-light flex flex-col gap-3">
+              <p>FAQ</p>
+              <p>Kontak Kami</p>
+              <p>Privasi</p>
+              <p>Syarat & Ketentuan</p>
+            </div>
+          </div>
+        </div>
+        <div class="bantuan hidden sm:flex flex-col gap-3">
           <h1 class="text-normal font-medium">Bantuan</h1>
           <div class="text-sm font-light flex flex-col gap-3">
             <p>FAQ</p>
@@ -515,10 +368,21 @@
           },
         },
       };
+      function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      const icon = document.getElementById(`icon-${id}`);
+
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        icon.classList.add("rotate-90");
+      } else {
+        content.classList.add("hidden");
+        icon.classList.remove("rotate-90");
+      }
+    }
       const swiper = new Swiper(".swiperLandscape", {
         slidesPerView: "auto",
         spaceBetween: 25,
-
         breakpoints: {
           640: {
             slidesPerView: 4,
@@ -532,7 +396,7 @@
       });
       const swiperVertical = new Swiper(".swiperPotrait", {
         slidesPerView: "auto",
-        spaceBetween: 25,
+        spaceBetween: 20,
 
         breakpoints: {
           640: {
@@ -545,7 +409,6 @@
           prevEl: ".swiper-button-prev",
         },
       });
-
       function updateImage() {
         const img = document.getElementById("nav-logo");
         if (window.innerWidth >= 640) {
@@ -554,7 +417,6 @@
           img.src = "/assets/logoNoText.png";
         }
       }
-
       window.addEventListener("resize", updateImage);
       window.addEventListener("DOMContentLoaded", updateImage);
     </script>
