@@ -1,2 +1,0 @@
-id="icon-accordion1"
-class="w-5 h-5 transform transition-transform"

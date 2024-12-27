@@ -1,110 +1,164 @@
 [
   {
     "id": 1,
-    "title": "Top Rating Film dan Series Hari ini",
-    "films": [
-      {
-        "id": 1,
-        "title": "Alice In Borderland",
-        "image": "assets/potrait/aliceinborderland.png"
-      },
-      {
-        "id": 2,
-        "title": "All of Us Are Dead",
-        "image": "assets/potrait/allofusaredead.png"
-      },
-      {
-        "id": 3,
-        "title": "Ant-Man and the Wasp: Quantumania",
-        "image": "assets/potrait/antman.png"
-      },
-      {
-        "id": 4,
-        "title": "Avatar: The Way of Water",
-        "image": "assets/potrait/avatar.png"
-      },
-      {
-        "id": 5,
-        "title": "Big Hero 6",
-        "image": "assets/potrait/bighero6.png"
-      },
-      {
-        "id": 6,
-        "title": "Blue Lock",
-        "image": "assets/potrait/bluelock.png"
-      }
-    ]
+    "title": "Alice In Borderland",
+    "image": "assets/potrait/aliceinborderland.png",
+    "rating": 4.7,
+    "category": "series",
+    "update_at": "2024-12-10 12:00:00",
+    "rank": 1
   },
   {
     "id": 2,
-    "title": "Film trending",
-    "films": [
-      {
-        "id": 1,
-        "title": "Alice In Borderland",
-        "image": "assets/potrait/aliceinborderland.png"
-      },
-      {
-        "id": 2,
-        "title": "All of Us Are Dead",
-        "image": "assets/potrait/allofusaredead.png"
-      },
-      {
-        "id": 3,
-        "title": "Ant-Man and the Wasp: Quantumania",
-        "image": "assets/potrait/antman.png"
-      },
-      {
-        "id": 4,
-        "title": "Avatar: The Way of Water",
-        "image": "assets/potrait/avatar.png"
-      },
-      {
-        "id": 5,
-        "title": "Big Hero 6",
-        "image": "assets/potrait/bighero6.png"
-      },
-      {
-        "id": 6,
-        "title": "Blue Lock",
-        "image": "assets/potrait/bluelock.png"
-      }
-    ]
+    "title": "All of Us Are Dead",
+    "image": "assets/potrait/allofusaredead.png",
+    "rating": 4.6,
+    "category": "series",
+    "update_at": "2024-11-23 12:00:00",
+    "rank": 12
   },
   {
     "id": 3,
-    "title": "Rilis Baru",
-    "films": [
-      {
-        "id": 1,
-        "title": "Alice In Borderland",
-        "image": "assets/potrait/aliceinborderland.png"
-      },
-      {
-        "id": 2,
-        "title": "All of Us Are Dead",
-        "image": "assets/potrait/allofusaredead.png"
-      },
-      {
-        "id": 3,
-        "title": "Ant-Man and the Wasp: Quantumania",
-        "image": "assets/potrait/antman.png"
-      },
-      {
-        "id": 4,
-        "title": "Avatar: The Way of Water",
-        "image": "assets/potrait/avatar.png"
-      },
-      {
-        "id": 5,
-        "title": "Big Hero 6",
-        "image": "assets/potrait/bighero6.png"
-      },
-      {
-        "id": 6,
-        "title": "Blue Lock",
-        "image": "assets/potrait/bluelock.png"
-      }
-    ]
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "image": "assets/potrait/antman.png",
+    "rating": 4.4,
+    "category": "film",
+    "update_at": "2024-02-23 12:00:00",
+    "rank": 9
+  },
+  {
+    "id": 4,
+    "title": "Avatar: The Way of Water",
+    "image": "assets/potrait/avatar.png",
+    "rating": 4.8,
+    "category": "film",
+    "update_at": "2024-08-25 12:00:00",
+    "rank": 3
+  },
+  {
+    "id": 5,
+    "title": "Big Hero 6",
+    "image": "assets/potrait/bighero6.png",
+    "rating": 4.7,
+    "category": "film",
+    "update_at": "2023-12-03 12:00:00",
+    "rank": 2
+  },
+  {
+    "id": 6,
+    "title": "Blue Lock",
+    "image": "assets/potrait/bluelock.png",
+    "rating": 4.2,
+    "category": "series",
+    "update_at": "2024-10-23 12:00:00",
+    "rank": 13
+  },
+  {
+    "id": 7,
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "image": "assets/potrait/drstrange.png",
+    "rating": 4.3,
+    "category": "film",
+    "update_at": "2024-11-23 12:00:00",
+    "rank": 6
+  },
+  {
+    "id": 8,
+    "title": "Duty After School",
+    "image": "assets/potrait/dutyafterschool.png",
+    "rating": 4.5,
+    "category": "series",
+    "update_at": "2024-09-23 12:00:00",
+    "rank": 10
+  },
+  {
+    "id": 9,
+    "title": "Fast X",
+    "image": "assets/potrait/fastx.png",
+    "rating": 4.0,
+    "category": "film",
+    "update_at": "2024-01-23 12:00:00",
+    "rank": 5
+  },
+  {
+    "id": 10,
+    "title": "The Little Mermaid",
+    "image": "assets/potrait/littlemermaid.png",
+    "rating": 4.0,
+    "category": "film",
+    "update_at": "2024-02-23 12:00:00",
+    "rank": 4
+  },
+  {
+    "id": 11,
+    "title": "Megan",
+    "image": "assets/potrait/megan.png",
+    "rating": 4.4,
+    "category": "film",
+    "update_at": "2024-02-22 12:00:00",
+    "rank": 7
+  },
+  {
+    "id": 12,
+    "title": "Missing",
+    "image": "assets/potrait/missing.png",
+    "rating": 4.4,
+    "category": "film",
+    "update_at": "2024-12-21 12:00:00",
+    "rank": 14
+  },
+  {
+    "id": 13,
+    "title": "My Hero Academia",
+    "image": "assets/potrait/myheroacademia.png",
+    "rating": 4.3,
+    "category": "series",
+    "update_at": "2024-12-24 12:00:00",
+    "rank": 18
+  },
+  {
+    "id": 14,
+    "title": "My Perfect Stranger",
+    "image": "assets/potrait/myperfectstranger.png",
+    "rating": 4.9,
+    "category": "series",
+    "update_at": "2024-12-22 12:00:00",
+    "rank": 11
+  },
+  {
+    "id": 15,
+    "title": "The Man Called Otto",
+    "image": "assets/potrait/otto.png",
+    "rating": 4.9,
+    "category": "film",
+    "update_at": "2024-12-21 12:00:00",
+    "rank": 8
+  },
+  {
+    "id": 16,
+    "title": "Shazam",
+    "image": "assets/potrait/shazam.png",
+    "rating": 4.3,
+    "category": "film",
+    "update_at": "2024-12-19 12:00:00",
+    "rank": 12
+  },
+  {
+    "id": 17,
+    "title": "Suzume",
+    "image": "assets/potrait/suzume.png",
+    "rating": 4.5,
+    "category": "film",
+    "update_at": "2024-12-02 12:00:00",
+    "rank": 15
+  },
+  {
+    "id": 18,
+    "title": "The Tomorrow War",
+    "image": "assets/potrait/tomorrowwar.png",
+    "rating": 4.2,
+    "category": "film",
+    "update_at": "2024-12-09 12:00:00",
+    "rank": 17
   }
 ]
