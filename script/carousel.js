@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   item.category === "series" &&
                   !isTop10ByRank
                     ? // Menampilkan Episode baru untuk kategori Series
-                      `<div class="absolute inset-2 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full">
+                      `<div class="absolute inset-2 sm:inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full">
                     Episode Baru
                   </div>`
                     : isTop10ByRank
