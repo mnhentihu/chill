@@ -108,12 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
                   item.category === "series" &&
                   !isTop10ByRank
                     ? // Menampilkan Episode baru untuk kategori Series
-                      `<div class="absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full">
+                      `<div class="absolute inset-2 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full">
                     Episode Baru
                   </div>`
                     : isTop10ByRank
-                    ? // menampilkan top 10
-                      `<div class="flex flex-col justify-center text-center absolute right-2 top-2 px-1.5 py-1 text-[8px] sm:text-sm bg-red-700 rounded-tr-lg rounded-bl-lg">
+                    ? // Menampilkan top 10
+                      `<div class="flex flex-col justify-center text-center absolute right-2 top-0 px-1.5 py-1 text-[8px] sm:text-sm bg-red-700 rounded-tr-lg rounded-bl-lg">
                       <span>Top</span>
                       <span>10</span>
                   </div>`
