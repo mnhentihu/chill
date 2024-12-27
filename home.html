@@ -15,7 +15,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/script/swiper.js"></script>
     <script src="/script/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js"></script>
@@ -116,130 +115,33 @@
         <h1 class="text-xl sm:text-3xl font-bold my-4 sm:my-10">Melanjutkan Tonton Film</h1>
         <!-- Slider main container -->
         <div class="swiper swiperLandscape">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <!-- Wrapper tambahan -->
+          <div id="carousel-container" class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/landscape/otto-lanscape.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-44 sm:h-32 object-cover w-[310px] sm:w-full"
-              />
-              <div
-                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
-              >
-                <span class="text-sm sm:text-sm">A Man Called Otto</span>
-                <span
-                  class="flex justify-center items-center gap-1 font-light text-xs sm:text-sm"
-                >
-                <span class="iconify" data-icon="material-symbols:star"></span>
-                  4.7/5
-                </span>
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/landscape/avatar-lanscape.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-44 sm:h-32 object-cover w-[310px] sm:w-full"
-              />
-              <div
-                class="flex justify-between items-end absolute inset-0 px-3 py-3.5 bg-gradient-to-t from-primary/80 to-transparent"
-              >
-                <span class="text-sm">Avatar : The Way of Water</span>
-                <span
-                  class="flex justify-center items-center gap-1 font-light text-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                    />
-                  </svg>
-                  4.7/5
-                </span>
-              </div>
-            </div>
           </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- navigation buttons -->
+          <div class="prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 items-center justify-center z-10 cursor-pointer hover:bg-white hover:text-black hidden sm:flex">
+            <span
+              class="iconify"
+              data-icon="ant-design:arrow-left-outlined"
+              data-width="24"
+              data-height="24"
+            ></span>
+          </div>
+          <div class="next absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 items-center justify-center z-10 cursor-pointer hover:bg-white hover:text-black hidden sm:flex">
+            <span
+              class="iconify"
+              data-icon="ant-design:arrow-right-outlined"
+              data-width="24"
+              data-height="24"
+            ></span>
+          </div>
         </div>
       </div>
     </section>
     <section class="flex justify-center mt-6 sm:mt-0">
-      <div class="w-11/12 mb-10">
-        <h1 class="text-xl sm:text-3xl font-bold my-4 sm:my-10">
-          Top Rating Film dan Series Hari ini
-        </h1>
-        <div class="swiper swiperPotrait">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/aliceinborderland.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/allofusaredead.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/antman.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-            <div class="swiper-slide realtive w-fit">
-              <img
-                src="/assets/potrait/avatar.png"
-                alt=""
-                srcset=""
-                class="rounded-lg h-44 sm:h-96 w-24 sm:w-full object-cover"
-              />
-              <div
-                class="flex justify-between items-start absolute inset-0 px-1.5 py-1 mt-2 ml-2 w-fit h-fit bg-button text-[8px] sm:text-sm rounded-full"
-              >
-                Episode Baru
-              </div>
-            </div>
-          </div>
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+      <div class="w-11/12 mb-10" id="potrait-carousel-container">
+        <!-- Content carousel -->
       </div>
     </section>
     <footer class="flex justify-center border-t py-8 sm:py-12">
@@ -295,26 +197,26 @@
           <h1 class="text-normal font-medium">Genre</h1>
           <div class="flex gap-6">
             <div class="text-sm font-light flex flex-col gap-3">
-              <p>Aksi</p>
-              <p>Anak-anak</p>
-              <p>Anime</p>
-              <p>Britania</p>
+              <a href="#">Aksi</a>
+              <a href="#">Anak-anak</a>
+              <a href="#">Anime</a>
+              <a href="#">Britania</a>
             </div>
             <div class="text-sm font-light flex flex-col gap-3">
-              <p>Drama</p>
-              <p>Fantasi Ilmiah & fantasi</p>
-              <p>Kejahatan</p>
-              <p>KDrama</p>
+              <a href="#">Drama</a>
+              <a href="#">Fantasi Ilmiah & fantasi</a>
+              <a href="#">Kejahatan</a>
+              <a href="#">KDrama</a>
             </div>
             <div class="text-sm font-light flex flex-col gap-3">
-              <p>Komedi</p>
-              <p>Petualangan</p>
-              <p>Perang</p>
-              <p>Romantis</p>
+              <a href="#">Komedi</a>
+              <a href="#">Petualangan</a>
+              <a href="#">Perang</a>
+              <a href="#">Romantis</a>
             </div>
             <div class="text-sm font-light flex flex-col gap-3">
-              <p>Sains & Alam</p>
-              <p>Thriller</p>
+              <a href="#">Sains & Alam</a>
+              <a href="#">Thriller</a>
             </div>
           </div>
         </div>
@@ -331,20 +233,20 @@
             class="hidden pl-4 transition-all duration-300"
           >
             <div class="text-sm font-light flex flex-col gap-3">
-              <p>FAQ</p>
-              <p>Kontak Kami</p>
-              <p>Privasi</p>
-              <p>Syarat & Ketentuan</p>
+              <a href="#">FAQ</a>
+              <a href="#">Kontak Kami</a>
+              <a href="#">Privasi</p>
+              <a href="#">Syarat & Ketentuan</a>
             </div>
           </div>
         </div>
         <div class="bantuan hidden sm:flex flex-col gap-3">
           <h1 class="text-normal font-medium">Bantuan</h1>
           <div class="text-sm font-light flex flex-col gap-3">
-            <p>FAQ</p>
-            <p>Kontak Kami</p>
-            <p>Privasi</p>
-            <p>Syarat & Ketentuan</p>
+            <a href="#">FAQ</a>
+            <a href="#">Kontak Kami</a>
+            <a href="#">Privasi</p>
+            <a href="#">Syarat & Ketentuan</a>
           </div>
         </div>
       </div>
@@ -380,35 +282,6 @@
         icon.classList.remove("rotate-90");
       }
     }
-      const swiper = new Swiper(".swiperLandscape", {
-        slidesPerView: "auto",
-        spaceBetween: 25,
-        breakpoints: {
-          640: {
-            slidesPerView: 4,
-            spaceBetweenSlides: 20,
-          },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      const swiperVertical = new Swiper(".swiperPotrait", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-
-        breakpoints: {
-          640: {
-            slidesPerView: 5,
-            spaceBetweenSlides: 20,
-          },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
       function updateImage() {
         const img = document.getElementById("nav-logo");
         if (window.innerWidth >= 640) {
@@ -420,5 +293,6 @@
       window.addEventListener("resize", updateImage);
       window.addEventListener("DOMContentLoaded", updateImage);
     </script>
+    <script src="/script/carousel.js"></script>
   </body>
 </html>
